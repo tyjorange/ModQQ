@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout style="@style/ButtonBar">
+
+            <ImageButton
+                android:id="@+id/button_news"
+                style="@style/ButtonBarImgBtn"
+                android:background="@drawable/bar_news"
+                android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtonBar">
+
+            <ImageButton
+                android:id="@+id/button_contact"
+                style="@style/ButtonBarImgBtn"
+                android:background="@drawable/bar_contact"
+                android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtonBar">
+
+            <ImageButton
+                android:id="@+id/button_dynamic"
+                style="@style/ButtonBarImgBtn"
+                android:background="@drawable/bar_dynamic"
+                android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtonBar">
+
+            <ImageButton
+                android:id="@+id/button_setting"
+                style="@style/ButtonBarImgBtn"
+                android:background="@drawable/bar_setting"
+                android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/bottom_bar_group"
+        android:background="@color/device_line"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"/>
+
+</RelativeLayout>
